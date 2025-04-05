@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 /*
-Module Name: WooCommerce module
-Description: view WooCommerce shop orders and customer info from perfex Dashboard. click aurthor name for support
-Author: Techy4m
-Author URI: https://codecanyon.net/item/woocommerce-module-for-perfex-crm/25337376/support
-Version: 2.2.2
+Module Name: WooCommerce Perfex CRM module
+Description: WooCommerce Perfex CRM module manage shop orders and customer info from perfex Dashboard. click aurthor name for support
+Author: Galatians
+Author URI: https://galatians.co.za
+Version: 1.3
 Requires at least: 2.4.2
 */
 require(__DIR__ . '/vendor/autoload.php');
@@ -36,7 +36,7 @@ hooks()->add_filter('module_woocommerce_action_links', 'module_woocommerce_actio
 function module_woocommerce_action_links($actions)
 {
     $actions[] = '<a href="' . admin_url('woocommerce/stores') . '">' . _l('settings') . '</a>';
-    $actions[] = '<a href="https://www.boxvibe.com/support?envato_item_id=25337376" target="_blank">' . _l('help') . '</a>';
+    $actions[] = '<a href="https://www.galatians.co.za/contact" target="_blank">' . _l('help') . '</a>';
 
     return $actions;
 }
